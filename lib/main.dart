@@ -34,17 +34,20 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
-        padding: const EdgeInsets.all(100.0),
+        padding: const EdgeInsets.all(85.0),
         child: TextField(
             controller: _textController,
             decoration: InputDecoration(
                 hintText: 'Enter Score Here',
                 border: OutlineInputBorder(),
-                suffixIcon: ElevatedButton(
-                    onPressed: () {
-                      _onPressed();
-                    },
-                    child: Text('Convert')))),
+                suffixIcon: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                      onPressed: () {
+                        _onPressed();
+                      },
+                      child: Text('Convert')),
+                ))),
       ),
       Text(_letterGrade),
     ]));
