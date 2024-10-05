@@ -1,15 +1,16 @@
-class GradingTool {
-  letterGrade(int score) {
-    if (score >= 90) {
-      return "A";
-    } else if (score >= 80) {
-      return "B";
-    } else if (score >= 70) {
-      return "C";
-    } else if (score >= 60) {
-      return "D";
-    } else {
-      return "F";
+class GradeTool {
+  String letterGradeCalculator(int score) {
+    switch (score) {
+      case >= 90:
+        return "A";
+      case >= 80:
+        return "B";
+      case >= 70:
+        return "C";
+      case >= 60:
+        return "D";
+      default:
+        return "F";
     }
   }
 }

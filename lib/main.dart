@@ -26,7 +26,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _textController = TextEditingController();
 
-  final calculator = GradingTool();
+  final calculator = GradeTool();
   String _letterGrade = '';
 
   @override
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
   void _onPressed() {
     setState(() {
       int numericalGrade = int.parse(_textController.text);
-      String result = calculator.letterGrade(numericalGrade);
+      String result = calculator.letterGradeCalculator(numericalGrade);
       _letterGrade = result;
     });
   }
