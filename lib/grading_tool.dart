@@ -1,5 +1,5 @@
 class GradeTool {
-  String letterGradeCalculator(int score) {
+  String calculateLetterGrade(int score) {
     switch (score) {
       case >= 90:
         return "A";

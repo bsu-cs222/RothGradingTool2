@@ -8,7 +8,7 @@ void main() {
 
   for (int i = 0; i < grades.length; i++) {
     test('$scores will be converted to $grades', () {
-      String result = calculator.letterGradeCalculator(scores[i]);
+      String result = calculator.calculateLetterGrade(scores[i]);
       expect(result, grades[i]);
     });
   }
